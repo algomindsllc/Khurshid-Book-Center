@@ -254,20 +254,7 @@ export default function Home() {
           <ChevronDown className="h-8 w-8 text-white/60" />
         </div>
 
-        {/* Professional floating CTA sidebar */}
-        <div className="fixed right-6 top-1/2 -translate-y-1/2 z-40 hidden lg:flex items-center gap-3 group">
-          <div className="bg-white/95 backdrop-blur-md rounded-lg shadow-2xl border border-white/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 px-4 py-3 whitespace-nowrap">
-            <p className="text-sm font-semibold text-gray-900">Need Assistance?</p>
-          </div>
-          <button
-            onClick={() => scrollToSection("contact")}
-            className="bg-gradient-to-br from-red-600 to-red-700 hover:from-red-700 hover:to-red-800 text-white font-bold px-5 py-6 rounded-xl shadow-2xl hover:shadow-red-600/40 transition-all duration-300 transform hover:scale-110 flex items-center justify-center group"
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-            </svg>
-          </button>
-        </div>
+
 
       </section>
 

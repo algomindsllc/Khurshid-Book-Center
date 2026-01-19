@@ -559,7 +559,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h3 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-4">What Our Customers Say</h3>
-            <p className="text-lg text-muted-foreground">Trusted by hundreds in the Nowshera community</p>
+            <p className="text-lg text-muted-foreground">Trusted by hundreds in the Lahore community</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-6 max-w-6xl mx-auto">

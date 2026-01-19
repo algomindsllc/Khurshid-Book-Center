@@ -48,11 +48,13 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between py-4">
             <div className="flex items-center gap-3">
-              <img
-                src="/khurshid-logo.png"
-                alt="Khurshid Book Center Logo"
-                className="h-14 w-auto object-contain brightness-110"
-              />
+              <div className="h-14 w-14 bg-red-600 rounded-lg flex items-center justify-center">
+                <BookOpen className="h-8 w-8 text-white" />
+              </div>
+              <div className="hidden sm:flex flex-col">
+                <span className="text-white font-bold text-lg">Khan Book Shop</span>
+                <span className="text-red-500 text-xs">Lahore</span>
+              </div>
             </div>
 
             <nav className="hidden lg:flex items-center gap-6">
@@ -150,14 +152,14 @@ export default function Home() {
 
               {/* Description */}
               <p className="text-base md:text-lg text-white/90 max-w-xl mx-auto lg:mx-0 leading-relaxed font-light">
-                At Khurshid Book Center, we specialize in providing quality educational materials tailored to students' needs. With a legacy of excellence, a collection of over 5,000+ products, and a passion for education.
+                Khan Book Shop is a trusted bookstore in Lahore, specializing in school textbooks, university books, stationery items, school uniforms, medical scrubs, and sports accessories. With 503+ verified Google reviews and a 4.2-star rating, we are the preferred choice for students, parents, and professionals.
               </p>
 
               {/* Location info card */}
               <div className="flex flex-col lg:flex-row items-center lg:items-start gap-4 bg-white/5 backdrop-blur-md px-6 py-4 rounded-xl border border-white/10 w-fit mx-auto lg:mx-0">
                 <MapPin className="h-5 w-5 text-red-500 flex-shrink-0" />
                 <span className="text-sm text-white/95 font-medium">
-                  195-Saddar Bazar, Nowshera Cantt, Khyber Pakhtunkhwa
+                  Raiwind Road, Ali Town, Lahore, Punjab, Pakistan
                 </span>
               </div>
 
@@ -188,12 +190,12 @@ export default function Home() {
 
               {/* Trusted by section */}
               <div className="pt-8 border-t border-white/10">
-                <p className="text-xs text-white/60 mb-4 uppercase tracking-[0.2em] font-bold">Trusted By:</p>
+                <p className="text-xs text-white/60 mb-4 uppercase tracking-[0.2em] font-bold">⭐ 4.2★ Rating | 503+ Google Reviews</p>
                 <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
-                  <div className="text-white/70 text-sm font-medium">Education Pakistan</div>
-                  <div className="text-white/70 text-sm font-medium">Local Business Directory</div>
-                  <div className="text-white/70 text-sm font-medium">Nowshera Times</div>
-                  <div className="text-white/70 text-sm font-medium">KPK Journal</div>
+                  <div className="text-white/70 text-sm font-medium">✔ 1000+ Books</div>
+                  <div className="text-white/70 text-sm font-medium">✔ Premium Stationery</div>
+                  <div className="text-white/70 text-sm font-medium">✔ School Uniforms</div>
+                  <div className="text-white/70 text-sm font-medium">✔ Sports Items</div>
                 </div>
               </div>
             </div>
@@ -212,7 +214,7 @@ export default function Home() {
                     >
                       <img
                         src={image || "/placeholder.svg"}
-                        alt={`Khurshid Book Center ${index + 1}`}
+                        alt={`Khan Book Shop ${index + 1}`}
                         className="w-full h-full object-cover"
                       />
                       {/* Image overlay gradient */}
@@ -272,12 +274,10 @@ export default function Home() {
               <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-red-600 to-red-700 flex items-center justify-center animate-pulse shadow-lg">
                 <BookOpen className="h-6 w-6 text-white" />
               </div>
-              <h3 className="text-3xl md:text-4xl font-serif font-bold text-foreground">Khurshid Book Center</h3>
+              <h3 className="text-3xl md:text-4xl font-serif font-bold text-foreground">Khan Book Shop</h3>
             </div>
             <p className="text-lg text-muted-foreground">
-              Located in the heart of Sadar Bazar, Nowshera Cantt, Khurshid Book Center has been a cornerstone of
-              educational excellence in our community. We pride ourselves on offering a comprehensive selection of
-              quality products and personalized service.
+              Located in Ali Town, Raiwind Road, Lahore, Khan Book Shop has built a strong reputation as a reliable bookstore. Our mission is to support education by offering quality books and stationery at competitive prices, combined with friendly and helpful customer service. Whether you are a school student, university student, teacher, or medical professional, Khan Book Shop is your one-stop solution.
             </p>
           </div>
 
@@ -295,10 +295,10 @@ export default function Home() {
                     </svg>
                   ))}
                 </div>
-                <h4 className="text-3xl font-serif font-bold mb-2 text-foreground">4.0★</h4>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-2 font-medium">397+ verified reviews</p>
+                <h4 className="text-3xl font-serif font-bold mb-2 text-foreground">4.2★</h4>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-2 font-medium">503+ verified reviews</p>
                 <p className="text-xs text-red-700 font-semibold bg-red-600/10 px-3 py-1 rounded-full inline-block">
-                  Trusted Since 1990
+                  Highly Trusted
                 </p>
               </div>
             </Card>
@@ -309,8 +309,8 @@ export default function Home() {
                 <div className="w-20 h-20 rounded-full bg-gradient-to-br from-[#1e3a8a]/30 to-[#1e40af]/20 flex items-center justify-center mx-auto mb-5 transform group-hover:rotate-12 group-hover:scale-110 transition-all duration-500 shadow-lg">
                   <Package className="h-10 w-10 text-[#1e3a8a]" />
                 </div>
-                <h4 className="text-3xl font-serif font-bold mb-2 text-foreground">5000+</h4>
-                <p className="text-muted-foreground text-sm leading-relaxed mb-2 font-medium">Premium quality items</p>
+                <h4 className="text-3xl font-serif font-bold mb-2 text-foreground">1000+</h4>
+                <p className="text-muted-foreground text-sm leading-relaxed mb-2 font-medium">Books & Products</p>
                 <p className="text-xs text-[#1e3a8a] font-semibold bg-[#1e3a8a]/10 px-3 py-1 rounded-full inline-block">
                   Wide Selection
                 </p>
@@ -357,87 +357,71 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-16">
             <h3 className="text-3xl md:text-4xl font-serif font-bold text-foreground mb-4">
-              Comprehensive Product Range
+              Our Products & Categories
             </h3>
             <p className="text-lg text-muted-foreground">
-              Everything you need for academic success and creative learning
+              Everything you need from books to uniforms and sports items
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
             <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 border-2 hover:border-red-600/50 relative transform hover:-translate-y-3 hover:rotate-1">
               <div className="aspect-square bg-gradient-to-br from-red-600/10 to-red-700/5 flex items-center justify-center relative overflow-hidden">
-                <img
-                  src="/books-collection-academic.jpg"
-                  alt="Books Collection"
-                  className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-110"
-                />
+                <div className="text-6xl">📚</div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute top-4 right-4 bg-red-600 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
-                  1000+ Titles
+                  1000+ Books
                 </div>
               </div>
               <div className="p-6 bg-gradient-to-b from-background to-red-600/5">
-                <h4 className="text-xl font-serif font-semibold mb-2">Books</h4>
+                <h4 className="text-xl font-serif font-semibold mb-2">Books Collection</h4>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Textbooks, reference materials, fiction, non-fiction, and children's literature
+                  School textbooks, university books, medical books, and competitive exam preparation
                 </p>
               </div>
             </Card>
             <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 border-2 hover:border-[#1e3a8a]/50 relative transform hover:-translate-y-3 hover:-rotate-1">
               <div className="aspect-square bg-gradient-to-br from-[#1e3a8a]/10 to-[#1e40af]/5 flex items-center justify-center relative overflow-hidden">
-                <img
-                  src="/stationery-display-store.jpg"
-                  alt="Stationery Collection"
-                  className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-110"
-                />
+                <div className="text-6xl">✏️</div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute top-4 right-4 bg-[#1e3a8a] text-white text-xs font-bold px-3 py-1 rounded-full z-10">
-                  Premium Quality
+                  Premium
                 </div>
               </div>
               <div className="p-6 bg-gradient-to-b from-background to-[#1e3a8a]/5">
                 <h4 className="text-xl font-serif font-semibold mb-2">Stationery</h4>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Notebooks, pens, pencils, art supplies, and office essentials
+                  Notebooks, pens, pencils, markers, files, and art supplies
                 </p>
               </div>
             </Card>
             <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 border-2 hover:border-green-500/50 relative transform hover:-translate-y-3 hover:rotate-1">
               <div className="aspect-square bg-gradient-to-br from-green-500/10 to-green-600/5 flex items-center justify-center relative overflow-hidden">
-                <img
-                  src="/school-uniform-collection.jpg"
-                  alt="School Uniforms"
-                  className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-110"
-                />
+                <div className="text-6xl">🎓</div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute top-4 right-4 bg-green-600 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
                   All Sizes
                 </div>
               </div>
               <div className="p-6 bg-gradient-to-b from-background to-green-500/5">
-                <h4 className="text-xl font-serif font-semibold mb-2">School Uniforms</h4>
+                <h4 className="text-xl font-serif font-semibold mb-2">Uniforms & Scrubs</h4>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Quality uniforms for all ages and educational institutions
+                  School uniforms, medical scrubs, lab coats for students and professionals
                 </p>
               </div>
             </Card>
             <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 border-2 hover:border-[#1e3a8a]/50 relative transform hover:-translate-y-3 hover:-rotate-1">
               <div className="aspect-square bg-gradient-to-br from-[#1e3a8a]/10 to-[#1e40af]/5 flex items-center justify-center relative overflow-hidden">
-                <img
-                  src="/educational-toys-learning.jpg"
-                  alt="Educational Toys"
-                  className="absolute inset-0 w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-500 group-hover:scale-110"
-                />
+                <div className="text-6xl">🎁</div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute top-4 right-4 bg-[#1e3a8a] text-white text-xs font-bold px-3 py-1 rounded-full z-10">
-                  Educational
+                  Gifts
                 </div>
               </div>
               <div className="p-6 bg-gradient-to-b from-background to-[#1e3a8a]/5">
-                <h4 className="text-xl font-serif font-semibold mb-2">Toys & More</h4>
+                <h4 className="text-xl font-serif font-semibold mb-2">Gifts & Sports</h4>
                 <p className="text-sm text-muted-foreground leading-relaxed">
-                  Educational toys, games, and learning materials for children
+                  Educational toys, gifts, and indoor/outdoor sports accessories
                 </p>
               </div>
             </Card>
@@ -665,16 +649,17 @@ export default function Home() {
               </Card>
 
               <Card className="p-8">
-                <h4 className="text-xl font-serif font-semibold mb-6">New Location Coming Soon</h4>
+                <h4 className="text-xl font-serif font-semibold mb-6">Visit Khan Book Shop</h4>
                 <div className="space-y-4">
                   <p className="text-sm text-foreground leading-relaxed">
-                    We're expanding! Khursheed Books and Uniform is opening a new location near All in One Store,
-                    Hakimabad, Nowshera, KPK.
+                    Located in Ali Town, Raiwind Road, Lahore. Open Monday to Sunday from 10:00 AM to 8:00 PM.
                   </p>
                   <div className="p-4 bg-accent rounded-lg">
-                    <p className="text-sm font-medium text-accent-foreground mb-2">Better Parking Available</p>
+                    <p className="text-sm font-medium text-accent-foreground mb-2">⏰ Business Hours</p>
                     <p className="text-xs text-muted-foreground">
-                      The new location will offer improved parking facilities for your convenience.
+                      Monday – Sunday: 10:00 AM – 8:00 PM<br/>
+                      Average Visit: 10 Minutes<br/>
+                      Peak Hours: Around 8:00 PM
                     </p>
                   </div>
                   <Button className="w-full">
@@ -693,31 +678,32 @@ export default function Home() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
             <div>
               <div className="flex items-center gap-3 mb-6">
-                <img src="/khurshid-logo.png" alt="Khurshid Book Center" className="h-14 w-auto brightness-110" />
+                <div className="h-12 w-12 bg-red-600 rounded-lg flex items-center justify-center">
+                  <BookOpen className="h-6 w-6 text-white" />
+                </div>
+                <span className="text-white font-bold text-lg">Khan Book Shop</span>
               </div>
               <p className="text-sm text-gray-400 leading-relaxed mb-6">
-                Your trusted partner in education since 1990. Serving Nowshera and beyond with quality books,
-                stationery, and educational supplies.
+                A trusted bookstore in Lahore serving Ali Town and Raiwind Road with quality books, stationery, uniforms, and educational supplies.
               </p>
 
               <div className="space-y-4">
                 <div>
                   <h5 className="text-white font-semibold text-sm mb-2 flex items-center gap-2">
-                    Pakistan (Main Store)
+                    📍 Main Store
                   </h5>
                   <p className="text-sm text-gray-400 leading-relaxed">
-                    195 Saddar Bazar, Saddar Nowshera
+                    Raiwind Road, Ali Town
                     <br />
-                    Nowshera Cantt, KPK
+                    Lahore, Punjab, Pakistan
                   </p>
                 </div>
 
                 <div>
-                  <h5 className="text-white font-semibold text-sm mb-2">New Location (Coming Soon)</h5>
+                  <h5 className="text-white font-semibold text-sm mb-2">⭐ Rating</h5>
                   <p className="text-sm text-gray-400 leading-relaxed">
-                    Near All in One Store
-                    <br />
-                    Hakimabad, Nowshera, KPK
+                    4.2★ Rating<br/>
+                    503+ Google Reviews
                   </p>
                 </div>
               </div>
@@ -731,12 +717,12 @@ export default function Home() {
               <ul className="space-y-3 text-sm text-gray-400">
                 <li>
                   <a href="#" className="hover:text-red-500 transition-colors">
-                    Academic Books
+                    School Textbooks
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-red-500 transition-colors">
-                    Textbooks & Reference
+                    University Books
                   </a>
                 </li>
                 <li>
@@ -751,12 +737,12 @@ export default function Home() {
                 </li>
                 <li>
                   <a href="#" className="hover:text-red-500 transition-colors">
-                    Educational Toys
+                    Medical Scrubs
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-red-500 transition-colors">
-                    Islamic Books & Quran
+                    Sports Items
                   </a>
                 </li>
               </ul>
@@ -764,13 +750,13 @@ export default function Home() {
 
             <div>
               <button className="text-white font-semibold mb-6 flex items-center gap-2 group">
-                Services and Solutions
+                Services
                 <ChevronDown className="h-4 w-4 group-hover:rotate-180 transition-transform" />
               </button>
               <ul className="space-y-3 text-sm text-gray-400 mb-6">
                 <li>
                   <a href="#" className="hover:text-red-500 transition-colors">
-                    Bulk Orders
+                    Bulk Book Orders
                   </a>
                 </li>
                 <li>
@@ -785,12 +771,12 @@ export default function Home() {
                 </li>
                 <li>
                   <a href="#" className="hover:text-red-500 transition-colors">
-                    Book Ordering
+                    Special Orders
                   </a>
                 </li>
                 <li>
                   <a href="#" className="hover:text-red-500 transition-colors">
-                    Delivery Service
+                    Customer Support
                   </a>
                 </li>
               </ul>
@@ -801,7 +787,7 @@ export default function Home() {
                 ))}
                 <Star className="h-4 w-4 text-red-500" />
               </div>
-              <p className="text-xs text-gray-500 mb-6">4.0 Rating · 397+ Google Reviews</p>
+              <p className="text-xs text-gray-500 mb-6">4.2 Rating · 503+ Google Reviews</p>
 
               <div className="flex gap-3">
                 <a
@@ -830,11 +816,37 @@ export default function Home() {
                 </a>
               </div>
             </div>
+
+            <div>
+              <h4 className="text-white font-semibold mb-6">Why Choose Us?</h4>
+              <ul className="space-y-3 text-sm text-gray-400">
+                <li className="flex items-start gap-2">
+                  <span className="text-red-500 mt-1">✔</span>
+                  <span>Trusted local bookstore</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-red-500 mt-1">✔</span>
+                  <span>1000+ books available</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-red-500 mt-1">✔</span>
+                  <span>100% original products</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-red-500 mt-1">✔</span>
+                  <span>Affordable prices</span>
+                </li>
+                <li className="flex items-start gap-2">
+                  <span className="text-red-500 mt-1">✔</span>
+                  <span>Friendly service</span>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-gray-500">
-              © 2025 Khurshid Book Center. All rights reserved. · خورشید کتاب سینٹر
+              © 2025 Khan Book Shop. All rights reserved. Best Bookstore in Lahore
             </p>
             <div className="flex gap-6 text-sm text-gray-500">
               <a href="#" className="hover:text-red-500 transition-colors">
@@ -849,7 +861,7 @@ export default function Home() {
 
         <div className="fixed right-0 top-1/2 -translate-y-1/2 z-50">
           <Button className="bg-red-600 hover:bg-red-700 text-white px-4 py-12 rounded-l-xl rounded-r-none shadow-2xl shadow-red-600/50 writing-mode-vertical font-bold text-sm tracking-wider">
-            Let's Talk Business
+            Contact Us
           </Button>
         </div>
       </footer>

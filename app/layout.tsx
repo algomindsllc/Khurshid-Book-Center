@@ -15,9 +15,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: "Khurshid Book Center - Quality Books & Educational Supplies",
+  title: "Khan Book Shop - Best Bookstore in Lahore | Books, Stationery & Uniforms",
   description:
-    "Khurshid Book Center in Nowshera offers a wide selection of books, stationery, school uniforms, and educational materials. Serving the community with quality products since establishment.",
+    "Khan Book Shop is a trusted bookstore in Lahore, located on Raiwind Road, Ali Town. We specialize in school textbooks, university books, stationery items, school uniforms, medical scrubs, gifts, and sports accessories. 4.2-star rating with 503+ Google reviews.",
   generator: "v0.app",
   icons: {
     icon: [

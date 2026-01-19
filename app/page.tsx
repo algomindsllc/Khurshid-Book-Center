@@ -624,9 +624,9 @@ export default function Home() {
                     <div>
                       <p className="font-medium text-foreground">Location</p>
                       <p className="text-sm text-muted-foreground leading-relaxed">
-                        195 Saddar Bazar, Saddar Nowshera
+                        1.5 km Raiwind Road, Opposite Dental Hospital
                         <br />
-                        Nowshera Cantt, Pakistan
+                        The University of Lahore, Lahore, Punjab, Pakistan
                       </p>
                     </div>
                   </div>
@@ -634,7 +634,7 @@ export default function Home() {
                     <Phone className="h-5 w-5 text-primary mt-1 flex-shrink-0" />
                     <div>
                       <p className="font-medium text-foreground">Phone</p>
-                      <p className="text-sm text-muted-foreground">+92 321 9753008</p>
+                      <p className="text-sm text-muted-foreground">0321 8471847</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
@@ -693,7 +693,9 @@ export default function Home() {
                     📍 Main Store
                   </h5>
                   <p className="text-sm text-gray-400 leading-relaxed">
-                    Raiwind Road, Ali Town
+                    1.5 km Raiwind Road, Opposite Dental Hospital
+                    <br />
+                    The University of Lahore
                     <br />
                     Lahore, Punjab, Pakistan
                   </p>

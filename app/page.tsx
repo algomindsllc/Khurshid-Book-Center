@@ -24,7 +24,6 @@ import { useState, useEffect } from "react"
 export default function Home() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const heroImages = [
-    "/images/hero-bg.jpg",
     "/images/bookmarks.jpg",
     "/images/books-collection.jpg",
     "/images/stationery-collection.jpg",

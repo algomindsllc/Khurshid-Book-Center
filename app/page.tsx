@@ -24,9 +24,7 @@ import { useState, useEffect } from "react"
 export default function Home() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0)
   const heroImages = [
-    "/images/gemini-generated-image-tj2c4stj2c4stj2c.jpeg",
-    "/images/gemini-generated-image-tj2c4stj2c4stj2c-20-281-29.jpeg",
-    "/images/489784637-1214240954043848-3267195434763359967-n.jpg",
+    "/images/hero-bg.jpg",
   ]
 
   useEffect(() => {
